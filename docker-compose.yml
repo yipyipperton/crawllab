@@ -1,0 +1,20 @@
+services:
+  crawllab:
+    build: .
+    ports:
+      - "43123:43123"
+    environment:
+      HOST: "0.0.0.0"
+      PORT: "43123"
+      FIXTURE_PORT: "43124"
+      DATABASE_PATH: /data/crawllab.sqlite
+      ARTIFACT_DIR: /data/artifacts
+      HEADLESS: "true"
+      BROWSER_CONCURRENCY: "2"
+      ALLOW_EXTERNAL: "false"
+      ALLOWLIST_HOSTS: "127.0.0.1,localhost"
+    volumes:
+      - crawllab-data:/data
+
+volumes:
+  crawllab-data:

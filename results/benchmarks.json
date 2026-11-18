@@ -1,0 +1,2428 @@
+{
+  "generatedAt": "2026-11-18T02:19:43.931Z",
+  "command": "npm run seed",
+  "node": "v22.23.4",
+  "platform": "linux 6.12.113+ x64",
+  "cpu": "Intel(R) Xeon(R) Processor",
+  "cpuCount": 4,
+  "playwright": "1.65.1",
+  "browserChannel": "chromium",
+  "cdp": {
+    "product": "HeadlessChrome/159.0.8154.6",
+    "protocolVersion": "1.3",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/159.0.8154.6 Safari/537.36",
+    "jsVersion": "15.9.128.1"
+  },
+  "metrics": {
+    "total": 116,
+    "successes": 74,
+    "failures": 42,
+    "errors": 0,
+    "running": 0,
+    "successRate": 63.8,
+    "avgLatencyMs": 686.4,
+    "p95LatencyMs": 2530,
+    "byCategory": [
+      {
+        "category": "selector_timeout",
+        "count": 14
+      },
+      {
+        "category": "async_content_not_ready",
+        "count": 8
+      },
+      {
+        "category": "http_429",
+        "count": 5
+      },
+      {
+        "category": "networkidle_false_timeout",
+        "count": 4
+      },
+      {
+        "category": "upstream_error",
+        "count": 3
+      },
+      {
+        "category": "access_challenge",
+        "count": 2
+      },
+      {
+        "category": "extraction_empty",
+        "count": 1
+      },
+      {
+        "category": "http_403",
+        "count": 1
+      },
+      {
+        "category": "http_500",
+        "count": 1
+      },
+      {
+        "category": "missing_dom",
+        "count": 1
+      },
+      {
+        "category": "robots_disallowed",
+        "count": 1
+      },
+      {
+        "category": "unexpected_redirect",
+        "count": 1
+      }
+    ],
+    "byRole": [
+      {
+        "role": "baseline",
+        "samples": 48,
+        "successes": 15,
+        "successRate": 31.3,
+        "avgLatencyMs": 857.6,
+        "p95LatencyMs": 2532
+      },
+      {
+        "role": "improved",
+        "samples": 44,
+        "successes": 44,
+        "successRate": 100,
+        "avgLatencyMs": 712.6,
+        "p95LatencyMs": 1837
+      },
+      {
+        "role": "research",
+        "samples": 14,
+        "successes": 12,
+        "successRate": 85.7,
+        "avgLatencyMs": 488.4,
+        "p95LatencyMs": 3020
+      },
+      {
+        "role": "diagnostic",
+        "samples": 10,
+        "successes": 3,
+        "successRate": 30,
+        "avgLatencyMs": 26.9,
+        "p95LatencyMs": 39
+      }
+    ],
+    "variants": [
+      {
+        "experimentId": "case-a",
+        "variant": "baseline-dcl",
+        "role": "baseline",
+        "samples": 8,
+        "successes": 0,
+        "failures": 8,
+        "successRate": 0,
+        "avgLatencyMs": 34.6,
+        "p95LatencyMs": 40,
+        "avgAttempts": 3,
+        "failureCategories": [
+          {
+            "category": "async_content_not_ready",
+            "count": 8
+          }
+        ]
+      },
+      {
+        "experimentId": "case-a",
+        "variant": "json-api",
+        "role": "improved",
+        "samples": 8,
+        "successes": 8,
+        "failures": 0,
+        "successRate": 100,
+        "avgLatencyMs": 8,
+        "p95LatencyMs": 11,
+        "avgAttempts": 1,
+        "failureCategories": []
+      },
+      {
+        "experimentId": "case-a",
+        "variant": "networkidle",
+        "role": "baseline",
+        "samples": 4,
+        "successes": 0,
+        "failures": 4,
+        "successRate": 0,
+        "avgLatencyMs": 2536.8,
+        "p95LatencyMs": 2552,
+        "avgAttempts": 1,
+        "failureCategories": [
+          {
+            "category": "networkidle_false_timeout",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "experimentId": "case-a",
+        "variant": "selector-ready",
+        "role": "improved",
+        "samples": 8,
+        "successes": 8,
+        "failures": 0,
+        "successRate": 100,
+        "avgLatencyMs": 1342,
+        "p95LatencyMs": 1382,
+        "avgAttempts": 1,
+        "failureCategories": []
+      },
+      {
+        "experimentId": "case-b",
+        "variant": "custom-ua-viewport",
+        "role": "research",
+        "samples": 4,
+        "successes": 4,
+        "failures": 0,
+        "successRate": 100,
+        "avgLatencyMs": 77.5,
+        "p95LatencyMs": 83,
+        "avgAttempts": 1,
+        "failureCategories": []
+      },
+      {
+        "experimentId": "case-b",
+        "variant": "stock-headless",
+        "role": "research",
+        "samples": 4,
+        "successes": 4,
+        "failures": 0,
+        "successRate": 100,
+        "avgLatencyMs": 73.5,
+        "p95LatencyMs": 79,
+        "avgAttempts": 1,
+        "failureCategories": []
+      },
+      {
+        "experimentId": "case-c",
+        "variant": "flake-no-retry",
+        "role": "baseline",
+        "samples": 12,
+        "successes": 9,
+        "failures": 3,
+        "successRate": 75,
+        "avgLatencyMs": 119.3,
+        "p95LatencyMs": 126,
+        "avgAttempts": 1,
+        "failureCategories": [
+          {
+            "category": "upstream_error",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "experimentId": "case-c",
+        "variant": "flake-retry",
+        "role": "improved",
+        "samples": 12,
+        "successes": 12,
+        "failures": 0,
+        "successRate": 100,
+        "avgLatencyMs": 119.3,
+        "p95LatencyMs": 124,
+        "avgAttempts": 1.25,
+        "failureCategories": []
+      },
+      {
+        "experimentId": "case-c",
+        "variant": "overload-bounded",
+        "role": "improved",
+        "samples": 6,
+        "successes": 6,
+        "failures": 0,
+        "successRate": 100,
+        "avgLatencyMs": 1837.2,
+        "p95LatencyMs": 1841,
+        "avgAttempts": 1,
+        "failureCategories": []
+      },
+      {
+        "experimentId": "case-c",
+        "variant": "overload-burst",
+        "role": "baseline",
+        "samples": 6,
+        "successes": 2,
+        "failures": 4,
+        "successRate": 33.3,
+        "avgLatencyMs": 2205,
+        "p95LatencyMs": 2527,
+        "avgAttempts": 1,
+        "failureCategories": [
+          {
+            "category": "selector_timeout",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "experimentId": "case-c",
+        "variant": "overload-retry",
+        "role": "baseline",
+        "samples": 6,
+        "successes": 2,
+        "failures": 4,
+        "successRate": 33.3,
+        "avgLatencyMs": 2204.2,
+        "p95LatencyMs": 2521,
+        "avgAttempts": 2.33,
+        "failureCategories": [
+          {
+            "category": "selector_timeout",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "experimentId": "case-c",
+        "variant": "ratelimit-burst",
+        "role": "baseline",
+        "samples": 6,
+        "successes": 2,
+        "failures": 4,
+        "successRate": 33.3,
+        "avgLatencyMs": 66.3,
+        "p95LatencyMs": 77,
+        "avgAttempts": 1,
+        "failureCategories": [
+          {
+            "category": "http_429",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "experimentId": "case-c",
+        "variant": "ratelimit-paced",
+        "role": "improved",
+        "samples": 4,
+        "successes": 4,
+        "failures": 0,
+        "successRate": 100,
+        "avgLatencyMs": 29,
+        "p95LatencyMs": 31,
+        "avgAttempts": 1,
+        "failureCategories": []
+      },
+      {
+        "experimentId": "case-c",
+        "variant": "short-timeout",
+        "role": "baseline",
+        "samples": 6,
+        "successes": 0,
+        "failures": 6,
+        "successRate": 0,
+        "avgLatencyMs": 409,
+        "p95LatencyMs": 411,
+        "avgAttempts": 4,
+        "failureCategories": [
+          {
+            "category": "selector_timeout",
+            "count": 6
+          }
+        ]
+      },
+      {
+        "experimentId": "case-c",
+        "variant": "sufficient-timeout",
+        "role": "improved",
+        "samples": 6,
+        "successes": 6,
+        "failures": 0,
+        "successRate": 100,
+        "avgLatencyMs": 1330.8,
+        "p95LatencyMs": 1348,
+        "avgAttempts": 1,
+        "failureCategories": []
+      },
+      {
+        "experimentId": "case-re",
+        "variant": "gate-expect-full",
+        "role": "research",
+        "samples": 2,
+        "successes": 0,
+        "failures": 2,
+        "successRate": 0,
+        "avgLatencyMs": 3017,
+        "p95LatencyMs": 3020,
+        "avgAttempts": 1,
+        "failureCategories": [
+          {
+            "category": "access_challenge",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "experimentId": "case-re",
+        "variant": "gate-partial",
+        "role": "research",
+        "samples": 2,
+        "successes": 2,
+        "failures": 0,
+        "successRate": 100,
+        "avgLatencyMs": 51,
+        "p95LatencyMs": 53,
+        "avgAttempts": 1,
+        "failureCategories": []
+      },
+      {
+        "experimentId": "case-re",
+        "variant": "gate-teaser",
+        "role": "research",
+        "samples": 2,
+        "successes": 2,
+        "failures": 0,
+        "successRate": 100,
+        "avgLatencyMs": 49,
+        "p95LatencyMs": 50,
+        "avgAttempts": 1,
+        "failureCategories": []
+      },
+      {
+        "experimentId": "diagnostics",
+        "variant": "broken-resources",
+        "role": "diagnostic",
+        "samples": 1,
+        "successes": 1,
+        "failures": 0,
+        "successRate": 100,
+        "avgLatencyMs": 32,
+        "p95LatencyMs": 32,
+        "avgAttempts": 1,
+        "failureCategories": []
+      },
+      {
+        "experimentId": "diagnostics",
+        "variant": "expected-redirect",
+        "role": "diagnostic",
+        "samples": 1,
+        "successes": 1,
+        "failures": 0,
+        "successRate": 100,
+        "avgLatencyMs": 29,
+        "p95LatencyMs": 29,
+        "avgAttempts": 1,
+        "failureCategories": []
+      },
+      {
+        "experimentId": "diagnostics",
+        "variant": "http-403",
+        "role": "diagnostic",
+        "samples": 1,
+        "successes": 0,
+        "failures": 1,
+        "successRate": 0,
+        "avgLatencyMs": 26,
+        "p95LatencyMs": 26,
+        "avgAttempts": 1,
+        "failureCategories": [
+          {
+            "category": "http_403",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "experimentId": "diagnostics",
+        "variant": "http-429",
+        "role": "diagnostic",
+        "samples": 1,
+        "successes": 0,
+        "failures": 1,
+        "successRate": 0,
+        "avgLatencyMs": 25,
+        "p95LatencyMs": 25,
+        "avgAttempts": 1,
+        "failureCategories": [
+          {
+            "category": "http_429",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "experimentId": "diagnostics",
+        "variant": "http-500",
+        "role": "diagnostic",
+        "samples": 1,
+        "successes": 0,
+        "failures": 1,
+        "successRate": 0,
+        "avgLatencyMs": 39,
+        "p95LatencyMs": 39,
+        "avgAttempts": 1,
+        "failureCategories": [
+          {
+            "category": "http_500",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "experimentId": "diagnostics",
+        "variant": "js-error",
+        "role": "diagnostic",
+        "samples": 1,
+        "successes": 0,
+        "failures": 1,
+        "successRate": 0,
+        "avgLatencyMs": 30,
+        "p95LatencyMs": 30,
+        "avgAttempts": 1,
+        "failureCategories": [
+          {
+            "category": "extraction_empty",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "experimentId": "diagnostics",
+        "variant": "missing-dom",
+        "role": "diagnostic",
+        "samples": 1,
+        "successes": 0,
+        "failures": 1,
+        "successRate": 0,
+        "avgLatencyMs": 27,
+        "p95LatencyMs": 27,
+        "avgAttempts": 1,
+        "failureCategories": [
+          {
+            "category": "missing_dom",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "experimentId": "diagnostics",
+        "variant": "robots",
+        "role": "diagnostic",
+        "samples": 1,
+        "successes": 0,
+        "failures": 1,
+        "successRate": 0,
+        "avgLatencyMs": 0,
+        "p95LatencyMs": 0,
+        "avgAttempts": 1,
+        "failureCategories": [
+          {
+            "category": "robots_disallowed",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "experimentId": "diagnostics",
+        "variant": "static",
+        "role": "diagnostic",
+        "samples": 1,
+        "successes": 1,
+        "failures": 0,
+        "successRate": 100,
+        "avgLatencyMs": 30,
+        "p95LatencyMs": 30,
+        "avgAttempts": 1,
+        "failureCategories": []
+      },
+      {
+        "experimentId": "diagnostics",
+        "variant": "unexpected-redirect",
+        "role": "diagnostic",
+        "samples": 1,
+        "successes": 0,
+        "failures": 1,
+        "successRate": 0,
+        "avgLatencyMs": 31,
+        "p95LatencyMs": 31,
+        "avgAttempts": 1,
+        "failureCategories": [
+          {
+            "category": "unexpected_redirect",
+            "count": 1
+          }
+        ]
+      }
+    ]
+  },
+  "fingerprintPairs": [
+    {
+      "leftConfig": "custom-ua-viewport",
+      "rightConfig": "stock-headless",
+      "leftSignature": "0e4dbf53ddcd",
+      "rightSignature": "91d54f97ce12",
+      "sameWebdriver": true,
+      "diffCount": 12,
+      "diffs": [
+        {
+          "key": "headlessTokenInUa",
+          "left": "false",
+          "right": "true"
+        },
+        {
+          "key": "language",
+          "left": "de-DE",
+          "right": "en-US"
+        },
+        {
+          "key": "languages",
+          "left": "de-DE",
+          "right": "en-US"
+        },
+        {
+          "key": "requestHeaders.accept-language",
+          "left": "de-DE",
+          "right": "en-US"
+        },
+        {
+          "key": "requestHeaders.sec-ch-ua-platform",
+          "left": "\"Windows\"",
+          "right": "\"Linux\""
+        },
+        {
+          "key": "requestHeaders.user-agent",
+          "left": "CrawlLabResearch/1.0 (config=custom-ua) Chrome/131.0.0.0",
+          "right": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/159.0.8154.6 Safari/537.36"
+        },
+        {
+          "key": "screen.height",
+          "left": "1080",
+          "right": "720"
+        },
+        {
+          "key": "screen.width",
+          "left": "1920",
+          "right": "1280"
+        },
+        {
+          "key": "timezone",
+          "left": "Europe/Berlin",
+          "right": "America/New_York"
+        },
+        {
+          "key": "userAgent",
+          "left": "CrawlLabResearch/1.0 (config=custom-ua) Chrome/131.0.0.0",
+          "right": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/159.0.8154.6 Safari/537.36"
+        },
+        {
+          "key": "viewport.innerHeight",
+          "left": "1080",
+          "right": "720"
+        },
+        {
+          "key": "viewport.innerWidth",
+          "left": "1920",
+          "right": "1280"
+        }
+      ]
+    }
+  ],
+  "webdriverValues": {
+    "stock-headless": true,
+    "custom-ua-viewport": true
+  },
+  "notes": [
+    {
+      "id": "7692415f-733c-4fb0-b89a-6bde246b1d18",
+      "experimentId": "case-a",
+      "variant": "baseline-dcl",
+      "createdAt": "2026-11-18T02:18:30.534Z",
+      "body": {
+        "presetId": "case-a-baseline",
+        "samples": 8,
+        "concurrency": 2,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 32,
+          "flaky": {
+            "ok": 0,
+            "http500": 0,
+            "http429": 0,
+            "overloadFast": 0,
+            "overloadSlow": 0
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "730c47eb-b08b-42e7-822f-e936cab77c3d",
+            "status": "failed",
+            "durationMs": 35,
+            "attempts": 3,
+            "category": "async_content_not_ready",
+            "httpStatus": 200
+          },
+          {
+            "id": "b016d678-3945-4329-8509-16bc011a872a",
+            "status": "failed",
+            "durationMs": 32,
+            "attempts": 3,
+            "category": "async_content_not_ready",
+            "httpStatus": 200
+          },
+          {
+            "id": "3e2588bf-4a3e-46e6-8e9d-650012757417",
+            "status": "failed",
+            "durationMs": 40,
+            "attempts": 3,
+            "category": "async_content_not_ready",
+            "httpStatus": 200
+          },
+          {
+            "id": "e04d30e5-0b75-4020-8c04-dd892c618663",
+            "status": "failed",
+            "durationMs": 39,
+            "attempts": 3,
+            "category": "async_content_not_ready",
+            "httpStatus": 200
+          },
+          {
+            "id": "89b91d28-9424-4ee2-b19f-41dd5b397afa",
+            "status": "failed",
+            "durationMs": 28,
+            "attempts": 3,
+            "category": "async_content_not_ready",
+            "httpStatus": 200
+          },
+          {
+            "id": "d11c73f0-f88b-43ed-bd5c-a77e5561e011",
+            "status": "failed",
+            "durationMs": 37,
+            "attempts": 3,
+            "category": "async_content_not_ready",
+            "httpStatus": 200
+          },
+          {
+            "id": "d3aed116-61e9-4cac-822a-4ff3a04ab943",
+            "status": "failed",
+            "durationMs": 28,
+            "attempts": 3,
+            "category": "async_content_not_ready",
+            "httpStatus": 200
+          },
+          {
+            "id": "034a3bf1-4dd9-434c-85e9-0c2f6f61b8c8",
+            "status": "failed",
+            "durationMs": 38,
+            "attempts": 3,
+            "category": "async_content_not_ready",
+            "httpStatus": 200
+          }
+        ]
+      }
+    },
+    {
+      "id": "a9aa505b-a8cd-4c74-a10d-aa396176c9eb",
+      "experimentId": "case-a",
+      "variant": "networkidle",
+      "createdAt": "2026-11-18T02:18:35.746Z",
+      "body": {
+        "presetId": "case-a-networkidle",
+        "samples": 4,
+        "concurrency": 2,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 48,
+          "flaky": {
+            "ok": 0,
+            "http500": 0,
+            "http429": 0,
+            "overloadFast": 0,
+            "overloadSlow": 0
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "d2d621b8-41d5-4286-b9b9-ad6eaee48cbc",
+            "status": "failed",
+            "durationMs": 2552,
+            "attempts": 1,
+            "category": "networkidle_false_timeout",
+            "httpStatus": 200
+          },
+          {
+            "id": "6f32be26-37c0-4a42-aae8-fa3203d9b3e1",
+            "status": "failed",
+            "durationMs": 2533,
+            "attempts": 1,
+            "category": "networkidle_false_timeout",
+            "httpStatus": 200
+          },
+          {
+            "id": "76f33b37-59d9-43a9-a518-d1c696db183e",
+            "status": "failed",
+            "durationMs": 2530,
+            "attempts": 1,
+            "category": "networkidle_false_timeout",
+            "httpStatus": 200
+          },
+          {
+            "id": "db680d77-1727-41c8-b53f-30dd23dd7274",
+            "status": "failed",
+            "durationMs": 2532,
+            "attempts": 1,
+            "category": "networkidle_false_timeout",
+            "httpStatus": 200
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2023036-fe75-49e0-9d30-8d78eedbef58",
+      "experimentId": "case-a",
+      "variant": "selector-ready",
+      "createdAt": "2026-11-18T02:18:41.361Z",
+      "body": {
+        "presetId": "case-a-selector",
+        "samples": 8,
+        "concurrency": 2,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 56,
+          "flaky": {
+            "ok": 0,
+            "http500": 0,
+            "http429": 0,
+            "overloadFast": 0,
+            "overloadSlow": 0
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "06ea73a8-c296-40de-ac99-4e8d2267740a",
+            "status": "success",
+            "durationMs": 1382,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "ee3bdedf-8b3c-40c6-8268-70992f0d4c0c",
+            "status": "success",
+            "durationMs": 1339,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "e185bb37-de9f-4042-a5bd-4b5568161479",
+            "status": "success",
+            "durationMs": 1338,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "3f86928d-6e25-4d26-88f2-9af0202753ce",
+            "status": "success",
+            "durationMs": 1332,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "36c6dea9-c4ba-4c68-ae9b-893415f33024",
+            "status": "success",
+            "durationMs": 1335,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "682ffaf7-2333-4fd4-a473-4ebcf5e1165d",
+            "status": "success",
+            "durationMs": 1344,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "c603893a-b2ed-40d3-a29e-75beb436f8b3",
+            "status": "success",
+            "durationMs": 1338,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "78e7c084-c70a-4a8b-8236-eda983497c25",
+            "status": "success",
+            "durationMs": 1328,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          }
+        ]
+      }
+    },
+    {
+      "id": "0aa06f6a-8603-42a7-850f-5879069db88a",
+      "experimentId": "case-a",
+      "variant": "json-api",
+      "createdAt": "2026-11-18T02:18:41.413Z",
+      "body": {
+        "presetId": "case-a-api",
+        "samples": 8,
+        "concurrency": 4,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 16,
+          "flaky": {
+            "ok": 0,
+            "http500": 0,
+            "http429": 0,
+            "overloadFast": 0,
+            "overloadSlow": 0
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "046d28f3-2f9e-4ba7-abcc-09c15af9a498",
+            "status": "success",
+            "durationMs": 9,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "baa5603f-8a85-47bf-b98d-a60e15ff7929",
+            "status": "success",
+            "durationMs": 11,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "7db47d68-cc54-4dad-acc1-8646622edd49",
+            "status": "success",
+            "durationMs": 10,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "10156c76-f03e-4323-9f64-b21f680a41d9",
+            "status": "success",
+            "durationMs": 11,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "e58f07a5-3b19-4855-b0ae-6d6cb09521a7",
+            "status": "success",
+            "durationMs": 6,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "5ead3c81-152b-47c1-b006-7c2e6bdead7a",
+            "status": "success",
+            "durationMs": 6,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "19d8ac75-ed1b-41ef-a6a9-f4852a655d41",
+            "status": "success",
+            "durationMs": 6,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "e8ceb61f-cbfe-4cfd-8528-480c7aee7167",
+            "status": "success",
+            "durationMs": 5,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          }
+        ]
+      }
+    },
+    {
+      "id": "00a80d70-cbec-42a8-b439-1a058d870b67",
+      "experimentId": "case-b",
+      "variant": "stock-headless",
+      "createdAt": "2026-11-18T02:18:42.233Z",
+      "body": {
+        "presetId": "case-b-stock",
+        "samples": 4,
+        "concurrency": 2,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 16,
+          "flaky": {
+            "ok": 0,
+            "http500": 0,
+            "http429": 0,
+            "overloadFast": 0,
+            "overloadSlow": 0
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "96c52f9f-bc62-4321-8cf4-e9c537f30112",
+            "status": "success",
+            "durationMs": 73,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "b76607f9-4f1b-48dd-a73b-dd02890a9a41",
+            "status": "success",
+            "durationMs": 79,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "611cd674-2ae1-473a-9849-f4afd5a2773f",
+            "status": "success",
+            "durationMs": 71,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "a48182ca-c1e5-44ed-b694-a82e08df4030",
+            "status": "success",
+            "durationMs": 71,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          }
+        ]
+      }
+    },
+    {
+      "id": "90675a99-53b2-407c-b6f2-74a0a5f729df",
+      "experimentId": "case-b",
+      "variant": "custom-ua-viewport",
+      "createdAt": "2026-11-18T02:18:42.989Z",
+      "body": {
+        "presetId": "case-b-custom",
+        "samples": 4,
+        "concurrency": 2,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 16,
+          "flaky": {
+            "ok": 0,
+            "http500": 0,
+            "http429": 0,
+            "overloadFast": 0,
+            "overloadSlow": 0
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "db440bac-9688-4ae7-a255-5f9df74d334f",
+            "status": "success",
+            "durationMs": 71,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "b72fbe04-5812-4ae4-92c9-c91724c96259",
+            "status": "success",
+            "durationMs": 75,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "6eb35f43-04d5-475b-8235-b712c55aefcf",
+            "status": "success",
+            "durationMs": 81,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "002e4e5d-73b4-4dd1-9237-f61839dec270",
+            "status": "success",
+            "durationMs": 83,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          }
+        ]
+      }
+    },
+    {
+      "id": "17973fea-a6af-419f-84e8-f26baea1636f",
+      "experimentId": "case-c",
+      "variant": "flake-no-retry",
+      "createdAt": "2026-11-18T02:18:44.948Z",
+      "body": {
+        "presetId": "case-c-flake",
+        "samples": 12,
+        "concurrency": 1,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 36,
+          "flaky": {
+            "ok": 9,
+            "http500": 3,
+            "http429": 0,
+            "overloadFast": 0,
+            "overloadSlow": 0
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "e5ccd956-efe0-4470-a767-0ee50a283f29",
+            "status": "success",
+            "durationMs": 119,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "294b0a13-8d71-4fdc-b693-087d6702a0e1",
+            "status": "success",
+            "durationMs": 119,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "7907076a-e346-4e79-980c-571dcee8c823",
+            "status": "success",
+            "durationMs": 120,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "9fef83df-ebc2-4278-b065-6d28e542f803",
+            "status": "failed",
+            "durationMs": 121,
+            "attempts": 1,
+            "category": "upstream_error",
+            "httpStatus": 200
+          },
+          {
+            "id": "17a122b2-2be8-4ba9-b91a-e82e14f7c38d",
+            "status": "success",
+            "durationMs": 116,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "9fe1c4ba-e488-46cc-a02e-bc6479a634b5",
+            "status": "success",
+            "durationMs": 117,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "d8cc74b7-ebe7-41cf-a246-9030412af9cd",
+            "status": "success",
+            "durationMs": 118,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "72aeb15f-975b-41b6-9a69-1394094803ce",
+            "status": "failed",
+            "durationMs": 118,
+            "attempts": 1,
+            "category": "upstream_error",
+            "httpStatus": 200
+          },
+          {
+            "id": "657cd630-47ae-4571-aebe-b8bc5e952d56",
+            "status": "success",
+            "durationMs": 118,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "0cedee43-16f5-4f5b-b154-4c0932cde972",
+            "status": "success",
+            "durationMs": 118,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "60ff046e-e5b1-4a08-b06f-c88b7efb2028",
+            "status": "success",
+            "durationMs": 126,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "2a3d900b-3a97-46c4-be81-1c95785f44ff",
+            "status": "failed",
+            "durationMs": 122,
+            "attempts": 1,
+            "category": "upstream_error",
+            "httpStatus": 200
+          }
+        ]
+      }
+    },
+    {
+      "id": "1658d81d-2008-47c8-ac93-ea40af5c0f10",
+      "experimentId": "case-c",
+      "variant": "flake-retry",
+      "createdAt": "2026-11-18T02:18:47.653Z",
+      "body": {
+        "presetId": "case-c-flake-retry",
+        "samples": 12,
+        "concurrency": 1,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 42,
+          "flaky": {
+            "ok": 12,
+            "http500": 3,
+            "http429": 0,
+            "overloadFast": 0,
+            "overloadSlow": 0
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "56466416-6641-4837-8168-8925846dca14",
+            "status": "success",
+            "durationMs": 122,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "f6d747ee-f93c-4990-b098-9d5f867ffc72",
+            "status": "success",
+            "durationMs": 124,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "1362561b-e4c9-4c87-b02b-7e44d6153c93",
+            "status": "success",
+            "durationMs": 122,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "cbd9aa9b-f8f4-4bdd-973b-a9e5606eec1b",
+            "status": "success",
+            "durationMs": 119,
+            "attempts": 2,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "c85751c9-93f7-4167-99c2-f08621a32b80",
+            "status": "success",
+            "durationMs": 121,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "f360db7a-233f-4958-a1eb-0fea0d9ae91a",
+            "status": "success",
+            "durationMs": 117,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "f7e5fd2e-9a23-40ca-b4eb-a642882f3bb6",
+            "status": "success",
+            "durationMs": 117,
+            "attempts": 2,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "4bcca39c-262f-44b1-8349-1f12b0c5605b",
+            "status": "success",
+            "durationMs": 122,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "5a0a5a86-3c64-4734-9267-2676dc16e828",
+            "status": "success",
+            "durationMs": 119,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "251a2836-75e1-4e5a-aabe-3a3e2fb4bad2",
+            "status": "success",
+            "durationMs": 116,
+            "attempts": 2,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "87aec517-f460-49cd-92ae-c67e1d500aa9",
+            "status": "success",
+            "durationMs": 116,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "a795607c-4230-4ebd-8438-cddfd7ac1da9",
+            "status": "success",
+            "durationMs": 117,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          }
+        ]
+      }
+    },
+    {
+      "id": "ff0b94f8-0798-4b93-ad4b-294a510bdc45",
+      "experimentId": "case-c",
+      "variant": "overload-burst",
+      "createdAt": "2026-11-18T02:18:50.289Z",
+      "body": {
+        "presetId": "case-c-overload",
+        "samples": 6,
+        "concurrency": 6,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 18,
+          "flaky": {
+            "ok": 0,
+            "http500": 0,
+            "http429": 0,
+            "overloadFast": 2,
+            "overloadSlow": 4
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "6bfce433-7fb2-4b05-9967-7952484698dd",
+            "status": "success",
+            "durationMs": 1589,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "c27785cd-6fe3-4730-a679-41bb648c12ac",
+            "status": "success",
+            "durationMs": 1587,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "c68302db-3ce6-4c58-8c8b-4ffd122d10d5",
+            "status": "failed",
+            "durationMs": 2508,
+            "attempts": 1,
+            "category": "selector_timeout",
+            "httpStatus": 200
+          },
+          {
+            "id": "75f52923-b0dd-425b-84ca-51700a6f5886",
+            "status": "failed",
+            "durationMs": 2509,
+            "attempts": 1,
+            "category": "selector_timeout",
+            "httpStatus": 200
+          },
+          {
+            "id": "5c009932-6df2-435b-9273-172d81643639",
+            "status": "failed",
+            "durationMs": 2527,
+            "attempts": 1,
+            "category": "selector_timeout",
+            "httpStatus": 200
+          },
+          {
+            "id": "0d7967d9-9dbf-4d19-823c-d1db88939d02",
+            "status": "failed",
+            "durationMs": 2510,
+            "attempts": 1,
+            "category": "selector_timeout",
+            "httpStatus": 200
+          }
+        ]
+      }
+    },
+    {
+      "id": "cbac8de6-c2c3-49f8-bd60-a7836239668a",
+      "experimentId": "case-c",
+      "variant": "overload-retry",
+      "createdAt": "2026-11-18T02:18:58.260Z",
+      "body": {
+        "presetId": "case-c-overload-retry",
+        "samples": 6,
+        "concurrency": 6,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 34,
+          "flaky": {
+            "ok": 0,
+            "http500": 0,
+            "http429": 0,
+            "overloadFast": 2,
+            "overloadSlow": 12
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "a6a4a821-ae84-41ac-91b5-02fcd63b1cb8",
+            "status": "success",
+            "durationMs": 1593,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "6592f002-a28d-4b42-bf59-eef561bfb47e",
+            "status": "success",
+            "durationMs": 1586,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "d49adcb4-01eb-41ea-b68e-17166219c4e0",
+            "status": "failed",
+            "durationMs": 2508,
+            "attempts": 3,
+            "category": "selector_timeout",
+            "httpStatus": 200
+          },
+          {
+            "id": "03e0d3c6-6189-405a-9f6a-e7b0663a97cd",
+            "status": "failed",
+            "durationMs": 2508,
+            "attempts": 3,
+            "category": "selector_timeout",
+            "httpStatus": 200
+          },
+          {
+            "id": "f4695442-5329-4069-a2cf-88fed4d5c560",
+            "status": "failed",
+            "durationMs": 2521,
+            "attempts": 3,
+            "category": "selector_timeout",
+            "httpStatus": 200
+          },
+          {
+            "id": "fe457842-a18f-4591-8a6d-945db52aa331",
+            "status": "failed",
+            "durationMs": 2509,
+            "attempts": 3,
+            "category": "selector_timeout",
+            "httpStatus": 200
+          }
+        ]
+      }
+    },
+    {
+      "id": "cba16a93-1673-40dc-985f-69a74e284419",
+      "experimentId": "case-c",
+      "variant": "overload-bounded",
+      "createdAt": "2026-11-18T02:19:03.965Z",
+      "body": {
+        "presetId": "case-c-bounded",
+        "samples": 6,
+        "concurrency": 2,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 18,
+          "flaky": {
+            "ok": 0,
+            "http500": 0,
+            "http429": 0,
+            "overloadFast": 6,
+            "overloadSlow": 0
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "9c74ad12-ca9d-4317-a954-b3751b03a223",
+            "status": "success",
+            "durationMs": 1833,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "ee03b471-2552-4246-be30-9155a1525aa3",
+            "status": "success",
+            "durationMs": 1835,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "021e42dc-b7fd-4b0f-8df9-4b1ddd1039cb",
+            "status": "success",
+            "durationMs": 1837,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "34e7a9b6-7a03-4ca4-94fb-5fe778d0de4d",
+            "status": "success",
+            "durationMs": 1836,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "687b9baf-abc0-4b77-b9a2-bbe369428f62",
+            "status": "success",
+            "durationMs": 1841,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "f69384ad-292b-44f5-b442-f16d5432403d",
+            "status": "success",
+            "durationMs": 1841,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          }
+        ]
+      }
+    },
+    {
+      "id": "c90f3c8d-0ba9-4310-a8b6-2ff1edaa111d",
+      "experimentId": "case-c",
+      "variant": "short-timeout",
+      "createdAt": "2026-11-18T02:19:18.968Z",
+      "body": {
+        "presetId": "case-c-short-timeout",
+        "samples": 6,
+        "concurrency": 1,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 30,
+          "flaky": {
+            "ok": 0,
+            "http500": 0,
+            "http429": 0,
+            "overloadFast": 0,
+            "overloadSlow": 0
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "b3a67b2f-efd7-491e-9451-1260652cdb1a",
+            "status": "failed",
+            "durationMs": 408,
+            "attempts": 4,
+            "category": "selector_timeout",
+            "httpStatus": 200
+          },
+          {
+            "id": "5c950c86-c648-4c22-b30f-9820662f4197",
+            "status": "failed",
+            "durationMs": 410,
+            "attempts": 4,
+            "category": "selector_timeout",
+            "httpStatus": 200
+          },
+          {
+            "id": "76312f9e-a219-42cc-89ff-424aaa3787f4",
+            "status": "failed",
+            "durationMs": 408,
+            "attempts": 4,
+            "category": "selector_timeout",
+            "httpStatus": 200
+          },
+          {
+            "id": "97688b77-d501-415f-af2b-e72a75960287",
+            "status": "failed",
+            "durationMs": 411,
+            "attempts": 4,
+            "category": "selector_timeout",
+            "httpStatus": 200
+          },
+          {
+            "id": "b3560137-13a4-47ba-8ed4-29049a0a5368",
+            "status": "failed",
+            "durationMs": 408,
+            "attempts": 4,
+            "category": "selector_timeout",
+            "httpStatus": 200
+          },
+          {
+            "id": "5f284af3-46ce-4974-ae57-d1f7670f0383",
+            "status": "failed",
+            "durationMs": 409,
+            "attempts": 4,
+            "category": "selector_timeout",
+            "httpStatus": 200
+          }
+        ]
+      }
+    },
+    {
+      "id": "d96117a8-0ceb-4d86-b441-1fa1602c6311",
+      "experimentId": "case-c",
+      "variant": "sufficient-timeout",
+      "createdAt": "2026-11-18T02:19:27.245Z",
+      "body": {
+        "presetId": "case-c-enough-timeout",
+        "samples": 6,
+        "concurrency": 1,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 12,
+          "flaky": {
+            "ok": 0,
+            "http500": 0,
+            "http429": 0,
+            "overloadFast": 0,
+            "overloadSlow": 0
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "ba12bbb9-8331-43dd-aa30-bf94018f8ebd",
+            "status": "success",
+            "durationMs": 1348,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "5c245b39-c4b8-4142-a4da-02d4f0ba5020",
+            "status": "success",
+            "durationMs": 1326,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "858473c3-961e-4bb7-8973-c7d2baf9044c",
+            "status": "success",
+            "durationMs": 1329,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "4a9fb4cd-00f1-4b4a-8e47-1b549e8fce74",
+            "status": "success",
+            "durationMs": 1329,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "8e7ae663-8767-4ea0-b772-9916af4af05b",
+            "status": "success",
+            "durationMs": 1324,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "b902ac46-719a-4200-bc67-b27c9e9241e9",
+            "status": "success",
+            "durationMs": 1329,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          }
+        ]
+      }
+    },
+    {
+      "id": "a8698457-4e94-4dbd-82eb-6df3587a03d0",
+      "experimentId": "case-c",
+      "variant": "ratelimit-burst",
+      "createdAt": "2026-11-18T02:19:27.443Z",
+      "body": {
+        "presetId": "case-c-rate-burst",
+        "samples": 6,
+        "concurrency": 6,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 12,
+          "flaky": {
+            "ok": 2,
+            "http500": 0,
+            "http429": 4,
+            "overloadFast": 0,
+            "overloadSlow": 0
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "20b5acf4-a882-4868-8299-47f9bd1175f6",
+            "status": "success",
+            "durationMs": 77,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "620b0ab0-9cf0-4ced-9493-b05b6ef3deaa",
+            "status": "success",
+            "durationMs": 73,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "593c3173-93d9-4cb0-b636-d9127ad8369d",
+            "status": "failed",
+            "durationMs": 63,
+            "attempts": 1,
+            "category": "http_429",
+            "httpStatus": 429
+          },
+          {
+            "id": "8eb1a3db-f022-43e2-9b64-d1644a1cbaf2",
+            "status": "failed",
+            "durationMs": 67,
+            "attempts": 1,
+            "category": "http_429",
+            "httpStatus": 429
+          },
+          {
+            "id": "f04b1802-8f34-4706-a8e0-174f0afe9506",
+            "status": "failed",
+            "durationMs": 57,
+            "attempts": 1,
+            "category": "http_429",
+            "httpStatus": 429
+          },
+          {
+            "id": "76142fbd-dbbc-4ac4-a9a1-14599cf60f96",
+            "status": "failed",
+            "durationMs": 61,
+            "attempts": 1,
+            "category": "http_429",
+            "httpStatus": 429
+          }
+        ]
+      }
+    },
+    {
+      "id": "012b5593-c2e5-42da-8046-fe36d0fb1b44",
+      "experimentId": "case-c",
+      "variant": "ratelimit-paced",
+      "createdAt": "2026-11-18T02:19:36.546Z",
+      "body": {
+        "presetId": "case-c-rate-paced",
+        "samples": 4,
+        "concurrency": 1,
+        "rateLimit": {
+          "capacity": 1,
+          "refillPerSecond": 0.3333333333333333
+        },
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 8,
+          "flaky": {
+            "ok": 4,
+            "http500": 0,
+            "http429": 0,
+            "overloadFast": 0,
+            "overloadSlow": 0
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "06ca51b8-dbc7-41c3-88e9-a42c0412bba9",
+            "status": "success",
+            "durationMs": 28,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "65254793-f68d-405f-b48a-b87fab6d3706",
+            "status": "success",
+            "durationMs": 31,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "66565fc8-b898-417f-b9aa-99beaf0834d7",
+            "status": "success",
+            "durationMs": 29,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "3e4c1da5-b5ed-4665-9e0d-53313a5cb569",
+            "status": "success",
+            "durationMs": 28,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          }
+        ]
+      }
+    },
+    {
+      "id": "fbf75d96-4caf-4d77-95f5-08470808bfef",
+      "experimentId": "diagnostics",
+      "variant": "static",
+      "createdAt": "2026-11-18T02:19:36.646Z",
+      "body": {
+        "presetId": "static-ok",
+        "samples": 1,
+        "concurrency": 1,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 2,
+          "flaky": {
+            "ok": 0,
+            "http500": 0,
+            "http429": 0,
+            "overloadFast": 0,
+            "overloadSlow": 0
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "9c6fd16b-1d0c-47a9-babe-1e7be3f8c141",
+            "status": "success",
+            "durationMs": 30,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          }
+        ]
+      }
+    },
+    {
+      "id": "376d855a-fd83-4aad-8eab-a9aff30777cc",
+      "experimentId": "diagnostics",
+      "variant": "http-403",
+      "createdAt": "2026-11-18T02:19:36.741Z",
+      "body": {
+        "presetId": "diag-403",
+        "samples": 1,
+        "concurrency": 1,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 2,
+          "flaky": {
+            "ok": 0,
+            "http500": 0,
+            "http429": 0,
+            "overloadFast": 0,
+            "overloadSlow": 0
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "60e81c8f-a378-4e40-a82f-17dc5de740be",
+            "status": "failed",
+            "durationMs": 26,
+            "attempts": 1,
+            "category": "http_403",
+            "httpStatus": 403
+          }
+        ]
+      }
+    },
+    {
+      "id": "1ffd31d8-dbf3-4540-a7c3-8ad8f6702dac",
+      "experimentId": "diagnostics",
+      "variant": "http-429",
+      "createdAt": "2026-11-18T02:19:36.827Z",
+      "body": {
+        "presetId": "diag-429",
+        "samples": 1,
+        "concurrency": 1,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 2,
+          "flaky": {
+            "ok": 0,
+            "http500": 0,
+            "http429": 0,
+            "overloadFast": 0,
+            "overloadSlow": 0
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "6af19e47-c369-4062-960e-6a634e2b66c9",
+            "status": "failed",
+            "durationMs": 25,
+            "attempts": 1,
+            "category": "http_429",
+            "httpStatus": 429
+          }
+        ]
+      }
+    },
+    {
+      "id": "727030b7-bd46-4d74-b9af-2cda222527e6",
+      "experimentId": "diagnostics",
+      "variant": "http-500",
+      "createdAt": "2026-11-18T02:19:36.929Z",
+      "body": {
+        "presetId": "diag-500",
+        "samples": 1,
+        "concurrency": 1,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 2,
+          "flaky": {
+            "ok": 0,
+            "http500": 0,
+            "http429": 0,
+            "overloadFast": 0,
+            "overloadSlow": 0
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "b60764e4-2fa0-4870-a849-6b65faaec9e4",
+            "status": "failed",
+            "durationMs": 39,
+            "attempts": 1,
+            "category": "http_500",
+            "httpStatus": 500
+          }
+        ]
+      }
+    },
+    {
+      "id": "27443188-c11a-4c2c-b7c5-4e252e3a87ea",
+      "experimentId": "diagnostics",
+      "variant": "unexpected-redirect",
+      "createdAt": "2026-11-18T02:19:37.024Z",
+      "body": {
+        "presetId": "diag-redirect",
+        "samples": 1,
+        "concurrency": 1,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 4,
+          "flaky": {
+            "ok": 0,
+            "http500": 0,
+            "http429": 0,
+            "overloadFast": 0,
+            "overloadSlow": 0
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "c8b96017-7781-48af-b2a5-3649a01ccb0e",
+            "status": "failed",
+            "durationMs": 31,
+            "attempts": 1,
+            "category": "unexpected_redirect",
+            "httpStatus": 200
+          }
+        ]
+      }
+    },
+    {
+      "id": "634af5be-7f3e-41e6-a80d-93f684ec7aa8",
+      "experimentId": "diagnostics",
+      "variant": "expected-redirect",
+      "createdAt": "2026-11-18T02:19:37.109Z",
+      "body": {
+        "presetId": "diag-redirect-ok",
+        "samples": 1,
+        "concurrency": 1,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 3,
+          "flaky": {
+            "ok": 0,
+            "http500": 0,
+            "http429": 0,
+            "overloadFast": 0,
+            "overloadSlow": 0
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "18476f64-1f1a-4d7e-8b53-d5c8e90e0ade",
+            "status": "success",
+            "durationMs": 29,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          }
+        ]
+      }
+    },
+    {
+      "id": "337a87c8-8d1e-46f1-a23d-dbc8601b7427",
+      "experimentId": "diagnostics",
+      "variant": "missing-dom",
+      "createdAt": "2026-11-18T02:19:37.209Z",
+      "body": {
+        "presetId": "diag-missing",
+        "samples": 1,
+        "concurrency": 1,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 2,
+          "flaky": {
+            "ok": 0,
+            "http500": 0,
+            "http429": 0,
+            "overloadFast": 0,
+            "overloadSlow": 0
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "7a676244-1cac-456e-9e39-bdbdbf794007",
+            "status": "failed",
+            "durationMs": 27,
+            "attempts": 1,
+            "category": "missing_dom",
+            "httpStatus": 200
+          }
+        ]
+      }
+    },
+    {
+      "id": "d1bc663a-5e95-4bc5-a1b3-e458b654a203",
+      "experimentId": "diagnostics",
+      "variant": "js-error",
+      "createdAt": "2026-11-18T02:19:37.291Z",
+      "body": {
+        "presetId": "diag-console",
+        "samples": 1,
+        "concurrency": 1,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 2,
+          "flaky": {
+            "ok": 0,
+            "http500": 0,
+            "http429": 0,
+            "overloadFast": 0,
+            "overloadSlow": 0
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "21e89438-d913-4c19-8000-b0140b996c55",
+            "status": "failed",
+            "durationMs": 30,
+            "attempts": 1,
+            "category": "extraction_empty",
+            "httpStatus": 200
+          }
+        ]
+      }
+    },
+    {
+      "id": "592d2782-3001-4011-a02a-a8af26a6dfb2",
+      "experimentId": "diagnostics",
+      "variant": "broken-resources",
+      "createdAt": "2026-11-18T02:19:37.375Z",
+      "body": {
+        "presetId": "diag-broken",
+        "samples": 1,
+        "concurrency": 1,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 4,
+          "flaky": {
+            "ok": 0,
+            "http500": 0,
+            "http429": 0,
+            "overloadFast": 0,
+            "overloadSlow": 0
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "dc411a5d-6994-4ff5-b188-b91396112755",
+            "status": "success",
+            "durationMs": 32,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          }
+        ]
+      }
+    },
+    {
+      "id": "0246b35d-1b73-4027-b9ed-e36fad3e7d6d",
+      "experimentId": "diagnostics",
+      "variant": "robots",
+      "createdAt": "2026-11-18T02:19:37.379Z",
+      "body": {
+        "presetId": "diag-robots",
+        "samples": 1,
+        "concurrency": 1,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 1,
+          "flaky": {
+            "ok": 0,
+            "http500": 0,
+            "http429": 0,
+            "overloadFast": 0,
+            "overloadSlow": 0
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "956d4cc0-d79a-467b-a1c6-9a4b8926721a",
+            "status": "failed",
+            "durationMs": 0,
+            "attempts": 1,
+            "category": "robots_disallowed",
+            "httpStatus": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "2d97c5c6-d958-4e9e-99d7-c9515814b003",
+      "experimentId": "case-re",
+      "variant": "gate-teaser",
+      "createdAt": "2026-11-18T02:19:37.577Z",
+      "body": {
+        "presetId": "gate-teaser",
+        "samples": 2,
+        "concurrency": 1,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 6,
+          "flaky": {
+            "ok": 0,
+            "http500": 0,
+            "http429": 0,
+            "overloadFast": 0,
+            "overloadSlow": 0
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "1d0e20f5-720e-4f12-a38a-fa701fcef6d5",
+            "status": "success",
+            "durationMs": 50,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "29412537-fe87-461f-b0aa-b00a6d00120e",
+            "status": "success",
+            "durationMs": 48,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          }
+        ]
+      }
+    },
+    {
+      "id": "9909c6d9-7207-4a51-a5b2-8e54aceb6df9",
+      "experimentId": "case-re",
+      "variant": "gate-partial",
+      "createdAt": "2026-11-18T02:19:37.777Z",
+      "body": {
+        "presetId": "gate-partial",
+        "samples": 2,
+        "concurrency": 1,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 6,
+          "flaky": {
+            "ok": 0,
+            "http500": 0,
+            "http429": 0,
+            "overloadFast": 0,
+            "overloadSlow": 0
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "13e5cf01-95ed-4579-a760-61557cecefbf",
+            "status": "success",
+            "durationMs": 53,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          },
+          {
+            "id": "76c40a06-9753-45c2-a140-4bc07e0ad29a",
+            "status": "success",
+            "durationMs": 49,
+            "attempts": 1,
+            "category": "success",
+            "httpStatus": 200
+          }
+        ]
+      }
+    },
+    {
+      "id": "59dce80b-74c0-4e58-a169-06eaeb224367",
+      "experimentId": "case-re",
+      "variant": "gate-expect-full",
+      "createdAt": "2026-11-18T02:19:43.910Z",
+      "body": {
+        "presetId": "gate-expect-full",
+        "samples": 2,
+        "concurrency": 1,
+        "rateLimit": null,
+        "fixtureStats": {
+          "privateHits": 0,
+          "requests": 6,
+          "flaky": {
+            "ok": 0,
+            "http500": 0,
+            "http429": 0,
+            "overloadFast": 0,
+            "overloadSlow": 0
+          },
+          "rateWindowMs": 5000,
+          "rateMax": 2,
+          "flakeModulus": 4,
+          "overloadLimit": 2,
+          "overloadFastMs": 1500,
+          "overloadSlowMs": 4500
+        },
+        "runs": [
+          {
+            "id": "facbf2a1-778e-4fd6-b427-b38d5d327fd2",
+            "status": "failed",
+            "durationMs": 3020,
+            "attempts": 1,
+            "category": "access_challenge",
+            "httpStatus": 200
+          },
+          {
+            "id": "3f197a30-ae53-49d7-b356-53187469ed52",
+            "status": "failed",
+            "durationMs": 3014,
+            "attempts": 1,
+            "category": "access_challenge",
+            "httpStatus": 200
+          }
+        ]
+      }
+    }
+  ]
+}

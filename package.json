@@ -1,0 +1,48 @@
+{
+  "name": "crawllab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Browser automation reliability, diagnostics, and fingerprint research lab",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "tsx src/dev.ts",
+    "dev:api": "tsx src/api/main.ts",
+    "dev:web": "vite --config web/vite.config.ts --host 0.0.0.0 --port 43125",
+    "build": "tsc -p tsconfig.json && vite build --config web/vite.config.ts",
+    "start": "node dist/api/main.js",
+    "test": "vitest run",
+    "test:unit": "vitest run tests/unit",
+    "test:integration": "vitest run tests/integration",
+    "test:e2e": "playwright test",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.test.json --noEmit && tsc -p web/tsconfig.json --noEmit",
+    "seed": "tsx src/experiments/seed.ts",
+    "analyze:gate": "tsx src/re/cli.ts",
+    "fixture": "tsx src/commands/fixture-only.ts"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.4.3",
+    "@fastify/static": "^10.1.11",
+    "acorn": "^8.19.0",
+    "fastify": "^5.12.8",
+    "playwright": "^1.65.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@tailwindcss/vite": "^4.3.5",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "tailwindcss": "^4.3.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.0"
+  }
+}
